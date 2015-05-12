@@ -1,0 +1,87 @@
+Usuario A.
+
+Instalar el servidor VNC 
+A.1 Verificar que hay internet.
+	>ping www.google.com
+Ver que se envïen y reciban paquetes.
+Ejemplo: 64 bytes from 64.233.178.104: icmp_seq=10 ttl=37 time=75.3 ms
+
+En la Raspberry Pi
+A.2 Instalar un servidor VNC
+	sudo apt-get install tightvncserver
+Si pide contraseña, investigar o pedirla (user: pi, password: raspberry).
+
+A.3 Crear dos sesiones, una para cada usuario extra.
+	>tightvncserver
+	>vncserver :1 -geometry 1920x1080 -depth 24
+	>vncserver :2 -geometry 1920x1080 -depth 24
+*Crear contraseña cuando lo pida
+
+A.4 Obtener el IP en el que la raspberry está funcionando:
+	>ifconfig
+Deben ver algo así:inet addr:192.168.100.6 
+
+En las máquinas que se conectarán remotamente de los otros usuarios.
+A.5 Instalar un VNC viewer
+	>sudo apt-get install xtightvncviewer
+
+A.6 Conectarse a la VNC creada en la Rpi
+VNC server: 192.168.100.5:<1,2>
+password: <elegido previamente>
+
+Una vez que se haya hecho esto en cada máquina abrir este archivo para que cada uno lo pueda ver en su computadora.
+A.7 Instalar git en Rpi.
+	>sudo apt-get install git
+
+A.8 Abrir una terminal y ubicarse bajo una carpeta en home (u otro lado) y crear un directorio para almacenar una copia del proyecto de github.
+	>mkdir OCR_Rpi && cd OCR_Rpi && git clone https://github.com/edgardosgtsub/Taller_LaSalle.git && cd Taller_LaSalle
+
+A.9 Abrir el README.md con vi (o el editor preferido):
+	>vi README.md
+
+Aquí termina la parte donde se prepara el ambiente para todo el grupo, ahora puede regresar a la Rpi.
+
+Instalción gVIM. Visor avanzado para editar texto
+1 Actualizar el S.O.:
+	>sudo apt-get update
+2 Instalar gVIM y dependencias:
+	>sudo apt-get install vim-gui-common
+ 	>sudo apt-get install vim-gtk
+3 Actualizar ~/.vimrc
+	> gvim ~/.vimrc
+Agregar estas líneas:
+
+
+Al final notificar a compañeros que guarden sus cambios en vi y luego reabrirlos en gvim y decirles de los nuevas mejoras. Preguntar qué les serviría para hacer sus tareas de mejor manera y añadirlas o averiguarlas con ayuda del tallerista o en internet.
+
+Instalación Mutt. Soporte para correo:
+1. Instalar
+	>sudo apt-get install mutt
+2. Crear una cuenta en gmail del equipo (asegurarse escoger Help me set up an organization next). Configurarlo para la cuenta de mutt:
+	>
+2. Reunirse con Usuario de verificación para asegurarse de que funciona. Leer el funcionamiento básico para darle los comandos:
+	>
+
+
+Creación de propio repositorio github. Para contribuciones en programación de mejoras y llevar un control de versiones y de cambios del equipo.
+1. Crear una cuenta con el correo del equipo.
+2. Crear un repositorio.
+	a) Crearlo con un README.md para que esté listo. Se puede usar este mismo README.md
+	b) Seguir los pasos en internet para crear el repositorio
+		echo "# Taller_LaSalle" >> README.md
+		git init
+		git add README.md
+		git commit -m "first commit"
+		git remote add origin https://github.com/edgardosgtsub/Taller_LaSalle.git
+		git push -u origin master
+3. Instalar git en cada computadora
+	>sudo apt-get install git
+4. Hacer un fork en cada computadora (ver en esquina superior derecha).
+
+4. Solicitar que los usuarios vayan subiendo sus scripts y trabajos a carpetas pensadas entre todos. Fijar una hora máxima en la que tienen que haber subido sus cambios.
+	a) Para esto se les tendrá que dar el path al repositorio nuevo apenas creado y clonarlo.
+	b) 
+
+Cabe señalar que para este punto ya cada usuario podrá trabajar desde su terminal en linux (clonando como en el paso 3) o en windows (desde la página) o MAC (terminal o página).
+Después de instalar
+
