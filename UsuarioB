@@ -1,0 +1,28 @@
+Usuario B
+
+El objetivo es probar y validar que tanto las herramientas como lo necesario para los scripts estén funcionando. Será el canal de comunicación entre soporte y el desarrollo de los scripts, donde también ayudará.
+-----------------------------------------------------------------------
+gVim. 
+1. Probar que efectivamente se puedan abrir archivos usando gvim <nombre del archivo>
+	>gvim prueba.pl
+-----------------------------------------------------------------------
+OCR Software
+
+1. Copiar archivos de: (O traer propios)
+https://www.dropbox.com/sh/rvtcdkf0qpdmgem/AABOrBXQEvUFCmFM_0JJnKC8a?dl=0
+
+2. Probar a convertir paginas de muestra para estas variantes:
+	a) Para las imágenes escaneadas, comparar los resultados arrojados por las tres herramientas: Tesseract, GOCR y Ocrad.
+	b) Hacer la misma comparación con las fotos.
+	c) Hacer todo lo anterior para PDFs y ver si funciona.
+
+	>ocrfeeder-cli --image Scanner\ 003.jpg -f TXT -o prueba_tesseract.txt -e Tesseract -l es
+	>ocrfeeder-cli --image Scanner\ 003.jpg -f TXT -o prueba_gocr.txt -e GOCR -l es
+	>ocrfeeder-cli --image Scanner\ 003.jpg -f TXT -o prueba_ocrad.txt -e Ocrad -l es
+-----------------------------------------------------------------------
+
+Git-Hub
+1. Probar clonar el repositorio nuevo:
+	git clone <direccion al repo>
+2. Crear una carpeta nueva, conteniendo los libros escaneados:
+	
