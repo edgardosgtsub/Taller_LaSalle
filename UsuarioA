@@ -47,21 +47,12 @@ Instalción gVIM. Visor avanzado para editar texto
 2 Instalar gVIM y dependencias:
 	>sudo apt-get install vim-gui-common
  	>sudo apt-get install vim-gtk
-3 Actualizar ~/.vimrc
-	> gvim ~/.vimrc
-Agregar estas líneas:
-
+3 Actualizar ~/.vimrc usando el vimrc del clone.
+	> cat vimrc >> ~/.vimrc
+*Probar abriendo el mismo archivo:
+	>gvim ~/.vimrc
 
 Al final notificar a compañeros que guarden sus cambios en vi y luego reabrirlos en gvim y decirles de los nuevas mejoras. Preguntar qué les serviría para hacer sus tareas de mejor manera y añadirlas o averiguarlas con ayuda del tallerista o en internet.
-
-Instalación Mutt. Soporte para correo:
-1. Instalar
-	>sudo apt-get install mutt
-2. Crear una cuenta en gmail del equipo (asegurarse escoger Help me set up an organization next). Configurarlo para la cuenta de mutt:
-	>
-2. Reunirse con Usuario de verificación para asegurarse de que funciona. Leer el funcionamiento básico para darle los comandos:
-	>
-
 
 Creación de propio repositorio github. Para contribuciones en programación de mejoras y llevar un control de versiones y de cambios del equipo.
 1. Crear una cuenta con el correo del equipo.
@@ -74,14 +65,16 @@ Creación de propio repositorio github. Para contribuciones en programación de 
 		git commit -m "first commit"
 		git remote add origin https://github.com/edgardosgtsub/Taller_LaSalle.git
 		git push -u origin master
+
 3. Instalar git en cada computadora
 	>sudo apt-get install git
-4. Hacer un fork en cada computadora (ver en esquina superior derecha).
 
-4. Solicitar que los usuarios vayan subiendo sus scripts y trabajos a carpetas pensadas entre todos. Fijar una hora máxima en la que tienen que haber subido sus cambios.
+4. Agregar a los colaboradores (tendrán que tener su cuenta cada uno). Colaborar con Usuario B para tener esto funcionando.
+
+5. Solicitar que los usuarios vayan subiendo sus scripts y trabajos a carpetas. Fijar una hora máxima en la que tienen que haber subido sus cambios. Hacerlo desde cada computadora, no desde el VNC.
 	a) Para esto se les tendrá que dar el path al repositorio nuevo apenas creado y clonarlo.
-	b) 
+	b) Con Usuario B probar crear un archivo nuevo en el repositorio.
 
 Cabe señalar que para este punto ya cada usuario podrá trabajar desde su terminal en linux (clonando como en el paso 3) o en windows (desde la página) o MAC (terminal o página).
-Después de instalar
+
 
