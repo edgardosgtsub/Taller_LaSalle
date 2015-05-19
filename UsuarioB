@@ -7,11 +7,13 @@ gVim.
 	>gvim prueba.pl
 -----------------------------------------------------------------------
 OCR Software
+1. Instalar paquetes de OCR:
+	>udo apt-get install ocrfeeder tesseract-ocr tesseract-ocr-spa tesseract-ocr-eng gocr ocrad
 
-1. Copiar archivos de: (O traer propios)
+2. Copiar archivos de: 
 https://www.dropbox.com/sh/rvtcdkf0qpdmgem/AABOrBXQEvUFCmFM_0JJnKC8a?dl=0
 
-2. Probar a convertir paginas de muestra para estas variantes:
+3. Probar a convertir paginas de muestra para estas variantes:
 	a) Para las imágenes escaneadas, comparar los resultados arrojados por las tres herramientas: Tesseract, GOCR y Ocrad.
 	b) Hacer la misma comparación con las fotos.
 	c) Hacer todo lo anterior para PDFs y ver si funciona.
